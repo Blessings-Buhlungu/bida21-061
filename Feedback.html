@@ -1,0 +1,180 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=Edge">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Mountain View Movie Theatre</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins',sans-serif;
+            box-sizing: border-box;
+            outline: none;
+        }
+        section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin-top: 150px;
+        }
+        .feedback{
+            width: 360px;
+            background: rgb(20, 20, 20);
+            box-shadow: 0 0 8px rgba(250, 250, 250, 0.6);
+            opacity: 0.6px;
+            border-radius: 10px;
+        }
+        .feedback form{
+            width: 100%;
+            text-align: center;
+            padding: 25px 20px;
+        }
+        form h1{
+            padding: 10px 0;
+        }
+        form .user-id{
+            position: relative;
+        }
+        .user-id i{
+            position: absolute;
+            font-size: 20px;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+        form input{
+            width: 100%;
+            height: 50px;
+            margin: 4px 0;
+            border: 1px solid #5c5c5c;
+            border-radius: 3px;
+            background: #181717;
+            padding: 0 15px;
+            padding-right: 45px;
+            font-size: 20px;
+        }
+        form textarea{
+            padding: 5px 15px;
+            border: 1px solid #5c5c5c;
+            border-radius: 3px;
+            background: #181717;
+            font-size: 20px;
+            width: 100%;
+            margin: 4px 0;
+        }
+        form button{
+            margin-top: 5px;
+            border: none;
+            background: teal;
+            color: #222;
+            padding: 10px 0;
+            width: 100%;
+            font-size: 20px;
+            font-weight: 800;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        form input:focus, form textarea:focus{
+            border: 1px solid teal;
+            color: teal;
+            transition: all 0.3s ease;
+        }
+        form input:focus::placeholder, form textarea:focus::placeholder{
+            padding-left: 4px;
+            color: teal;
+            transition: all 0.3s ease;
+        }
+        form input:focus + i{
+            color: teal;
+            transition: all 0.3s ease;   
+        }
+        .footer{
+            margin-top: 275px;
+            width: 100%;
+            background: #141414;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo/theater logo.png" alt="">
+            <h3>Mountain View</h3>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Movies</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="Action movies.html">Action</a></li>
+                            <li><a href="Bollywood movies.html">Bollywood</a></li>
+                            <li><a href="Comedy movies.html">Comedy</a></li>
+                            <li><a href="Romantic Movies.html">Romantic</a></li>                            
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="Contact us.html">Contact us</a></li>
+                <li><a href="Feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+        <div class="user">
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="">Login</a>
+        </div>
+    </header>
+
+
+    <section>
+        <div class="feedback">
+            <form>
+                <h9>Give us your Feedback</h9>
+                <div class="user-id">
+                    <input type="text" placeholder="Full name">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="user-id">
+                    <input type="email" placeholder="Email address">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <textarea cols="15" rows="5" placeholder="Enter your opinions here..."></textarea>
+                <button>Send</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="footer">
+            <div class="inside-footer">
+                <div class="footer-container">
+                    <div class="logopart">
+                        <h1>Mountain View</h1>
+                        <img src="Images/logo/theater logo.png" alt="">
+                    </div>
+                    <div class="copyright">
+                        <p>copyright &copy <span1>Kgale</span1>,All Rights Reserved-2022</p>
+                    </div>
+                    <div class="socials">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest"></i>
+                    </div>
+                    <div class="btn4">
+                        <a href="">Join Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
