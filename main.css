@@ -802,3 +802,6 @@ span1{
     color: teal;
     font-weight: bold;
 }
+.like p{
+    margin-top: 20px;
+}
